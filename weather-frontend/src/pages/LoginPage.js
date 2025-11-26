@@ -14,7 +14,7 @@ const LoginPage = ({ onLogin }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:9092/api/auth/login", formData, {
+      const response = await axios.post("http://localhost:2020/api/auth/login", formData, {
         headers: { "Content-Type": "application/json" }
       });
 
